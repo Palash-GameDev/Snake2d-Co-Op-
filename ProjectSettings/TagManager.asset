@@ -11,6 +11,8 @@ TagManager:
   - SpeedUp
   - ScoreBoost
   - Shield
+  - YellowSnake
+  - Food
   layers:
   - Default
   - TransparentFX

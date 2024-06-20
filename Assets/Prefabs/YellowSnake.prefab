@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2633081872647509938
+--- !u!1 &7072800888168122566
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1272913944175846012}
-  - component: {fileID: 68830485898386973}
-  - component: {fileID: 1601787759710067714}
-  - component: {fileID: 3675453166076474725}
-  - component: {fileID: 2585173272642703191}
+  - component: {fileID: 8324605809805713981}
+  - component: {fileID: 283889070880893211}
+  - component: {fileID: 6718626431340139572}
+  - component: {fileID: 9079112497630491235}
+  - component: {fileID: 1603485009311529494}
   m_Layer: 0
-  m_Name: Player1-Snake
-  m_TagString: GreenSnake
+  m_Name: YellowSnake
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1272913944175846012
+--- !u!4 &8324605809805713981
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2633081872647509938}
+  m_GameObject: {fileID: 7072800888168122566}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 3, z: 0}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &68830485898386973
+--- !u!212 &283889070880893211
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2633081872647509938}
+  m_GameObject: {fileID: 7072800888168122566}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6c0702b9247524042a52d4aaa3f78b82, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc7b5f94ac75b3540a6edc95b161abb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -87,14 +87,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &1601787759710067714
+--- !u!50 &6718626431340139572
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2633081872647509938}
+  m_GameObject: {fileID: 7072800888168122566}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -114,13 +114,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &3675453166076474725
+--- !u!58 &9079112497630491235
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2633081872647509938}
+  m_GameObject: {fileID: 7072800888168122566}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -149,23 +149,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.32
---- !u!114 &2585173272642703191
+--- !u!114 &1603485009311529494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2633081872647509938}
+  m_GameObject: {fileID: 7072800888168122566}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e8d60eeca1451647b56c9c35cec70c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerType: 1
   speed: 5
   speedMultiplier: 1
-  _snakeTailPrefab: {fileID: 3799400798571440818, guid: 5acd3ded22b944f4884ff519ea952a2e, type: 3}
+  snakeTailPrefab: {fileID: 3334397167557389146, guid: 6b136371c2bc76f4da732e56bee3b524, type: 3}
   initialSize: 3
   gridArea: {fileID: 0}
   powerUpDuration: 5
-  uiController: {fileID: 0}
-  _snakeTail: []
+  uiController: {fileID: 478198673531681310, guid: 71572e108059f1d469ec82bcf79ea615, type: 3}
+  snakeTail: []
