@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 596402920166202623}
   - component: {fileID: 3072430650156059695}
   - component: {fileID: 7323163708045825592}
-  - component: {fileID: 4330392083005526219}
+  - component: {fileID: -2711301271821877093}
   m_Layer: 0
   m_Name: Food _ScoreBoost
-  m_TagString: ScoreBoost
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.3
---- !u!114 &4330392083005526219
+--- !u!114 &-2711301271821877093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3835693403861727137}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e37eb34e0e493b243bd65b6e04cb39b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5483b021750ed2149be851e01dc7cab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToDestroy: 6
+  foodType: 3

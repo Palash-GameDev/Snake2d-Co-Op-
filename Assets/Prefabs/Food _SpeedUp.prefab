@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2417618803564114096}
   - component: {fileID: 1362423194528349949}
-  - component: {fileID: 433131282624287003}
-  - component: {fileID: 3836407974704867430}
+  - component: {fileID: -8432766270824851007}
+  - component: {fileID: 1639944357099786186}
   m_Layer: 0
   m_Name: Food _SpeedUp
-  m_TagString: SpeedUp
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,8 +86,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &433131282624287003
-CircleCollider2D:
+--- !u!114 &-8432766270824851007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10916853797400597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5483b021750ed2149be851e01dc7cab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodType: 2
+--- !u!70 &1639944357099786186
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,18 +132,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.3
---- !u!114 &3836407974704867430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10916853797400597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e37eb34e0e493b243bd65b6e04cb39b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeToDestroy: 6
+  m_Size: {x: 0.44, y: 0.6}
+  m_Direction: 0

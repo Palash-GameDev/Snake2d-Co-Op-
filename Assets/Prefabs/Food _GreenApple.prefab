@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 3400847669629543890}
   - component: {fileID: 9033815165039075156}
   - component: {fileID: 4060943021409200517}
-  - component: {fileID: 981196149565676587}
-  - component: {fileID: 571994623131827020}
+  - component: {fileID: 636955209786051681}
   m_Layer: 0
   m_Name: Food _GreenApple
-  m_TagString: GreenApple
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,22 +121,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.25
---- !u!114 &981196149565676587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094302984946113202}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ede42b89015b604ca25d96245536e7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gridArea: {fileID: 0}
-  foodItems: []
-  spawnDelay: 0
---- !u!114 &571994623131827020
+--- !u!114 &636955209786051681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,7 +130,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2094302984946113202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e37eb34e0e493b243bd65b6e04cb39b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5483b021750ed2149be851e01dc7cab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToDestroy: 6
+  foodType: 0
